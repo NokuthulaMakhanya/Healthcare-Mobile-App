@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LabTestBookActivity">
+
+    <EditText
+        android:id="@+id/editTextLTBContact"
+        android:layout_width="322dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="textPersonName"
+        android:textColor="#F6F3F3"
+        android:textColorHint="#FAF4F4"
+        android:textColorLink="#00E2DEE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBAddress" />
+
+    <EditText
+        android:id="@+id/editTextLTBAddress"
+        android:layout_width="322dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textEmailAddress"
+        android:textColor="#F6F3F3"
+        android:textColorHint="#FAF7F8"
+        android:textColorLink="#00E2DEE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBFullName" />
+
+    <EditText
+        android:id="@+id/editTextLTBPincode"
+        android:layout_width="322dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Pin Code"
+        android:inputType="textPersonName"
+        android:textColor="#F6F3F3"
+        android:textColorHint="#FAF4F4"
+        android:textColorLink="#00E2DEE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBContact" />
+
+    <TextView
+        android:id="@+id/textView_logo9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="24*7 Healthcare"
+        android:textColor="@color/purple_200"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPackageName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Please Fill Booking Details"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo9" />
+
+    <EditText
+        android:id="@+id/editTextLTBFullName"
+        android:layout_width="322dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textColor="#F6F3F3"
+        android:textColorHint="#FAF7F8"
+        android:textColorLink="#00E2DEE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPackageName3" />
+
+    <Button
+        android:id="@+id/buttonLTBBooking"
+        android:layout_width="287dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="124dp"
+        android:text="Book Appointment"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBPincode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
